@@ -1,0 +1,15 @@
+[package]
+name = "cardano-governance-metadata"
+description = "A rust library for indexing and interacting with CIP-100 governance metadata"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+url = "2.5"
+anyhow = "1.0"
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+json-ld = { version = "0.16", features = ["serde", "reqwest"] }
+rdf-types = "0.22"
+static-iref = "3"
+iref = "3"
